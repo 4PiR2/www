@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>游戏-2016届2班</title>
+<STYLE id="style_super_inline">body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0}body{text-align:center}body,form,#s_fm{position:relative}
+</STYLE>
+<LINK id="s_superplus_css_lnk" href="background/fullscreenbackground.css" 
+rel="stylesheet" type="text/css">
+<style>
+			.ribbon {
+				display:inline-block;
+			}
+			.ribbon:after, .ribbon:before {
+				margin-top:0.5em;
+				content: "";
+				float:left;				
+				border:1.5em solid #bc0;
+			}
+			.ribbon:after {
+				border-right-color:transparent;
+			}
+			.ribbon:before {
+				border-left-color:transparent;
+			}
+			.ribbon a:link, .ribbon a:visited { 
+				color:#000;
+				text-decoration:none;
+			    float:left;
+			    height:3.5em;
+				overflow:hidden;
+				font-weight:bold;
+			}
+			.ribbon span {
+				background:#bc0;
+				display:inline-block;
+				line-height:3em;
+				padding:0 1em;
+				margin-top:0.5em;
+				position:relative;
+				-webkit-transition: background-color 0.2s, margin-top 0.2s;  /* Saf3.2+, Chrome */
+				-moz-transition: background-color 0.2s, margin-top 0.2s;  /* FF4+ */
+				-ms-transition: background-color 0.2s, margin-top 0.2s;  /* IE10 */
+				-o-transition: background-color 0.2s, margin-top 0.2s;  /* Opera 10.5+ */
+				transition: background-color 0.2s, margin-top 0.2s;
+			}
+			.ribbon a:hover span {
+				background:#FFD204;
+				margin-top:0;
+			}
+			.ribbon span:before {
+				content: "";
+				position:absolute;
+				top:3em;
+				left:0;
+				border-right:0.5em solid #9B8651;
+				border-bottom:0.5em solid #bc0;
+			}
+			.ribbon span:after {
+				content: "";
+				position:absolute;
+				top:3em;
+				right:0;
+				border-left:0.5em solid #9B8651;
+				border-bottom:0.5em solid #bc0;
+			}
+		</style>
+<style>
+#image-boarder{
+padding-top:2%;
+padding-left:5%;
+padding-right:5%;
+}
+</style>
+
+<DIV id="wrapper"> <DIV class="s-skin-container s-isindex-wrap" style='background-image: url("background/freshfruit7.jpg");'></DIV>
+<P class="s-p-top" id="lg"><IMG width="117" height="110" id="s_lg_img" src="background/logo.png"></P>
+<div class='ribbon'><a href="index.html"><span>首页</span></a> <a href="info.html"><span>班级概况</span></a> <a href="activity.html"><span>活动简介</span></a> <a href="classmate.html"><span>特色同学</span></a> <a href="teacher.html"><span>教师简介</span></a> <a href="photo.html"target="_blank"><span>班级图集</span></a> <a href="video.html"target="_blank"><span>精彩视频</span></a> <a href="2048.html"target="_blank"><span>相关小游戏</span></a></div>
+
+  <link href="game/style/main.css" rel="stylesheet" type="text/css">
+  <!-- <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta property="og:title" content="2048 game"/>
+  <meta property="og:site_name" content="2048 game"/> -->
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+    <div id="image-boarder">
+<font face="Comic Sans MS" style="font-size: 50pt;color:#ff0">
+<b>TEACHERS</b></font>
+</div>
+<p class="game-intro"><font color="ffff00" face="黑体" style="background:#000000"><b><strong class="important">规则：</strong> 滑动手指移动方块，合并相同的两个老师变成一个<strong>新的老师</strong>。<br>推荐分辨率：大于521*521，低于此分辨率图片会无法正常显示。<br>在IE浏览器下如果不能载入游戏请点击“允许阻止的内容”按钮。</b></font></p>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>    
+    <button class="btc-donate" onclick="restart()" >重来</button></p>
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">再来一发</a>
+          <div class="score-sharing"></div>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <p class="game-message">
+      
+	  <script src="game/js/animframe_polyfill.js"></script>
+  <script src="game/js/keyboard_input_manager.js"></script>
+  <script src="game/js/html_actuator.js"></script>
+  <script src="game/js/grid.js"></script>
+  <script src="game/js/tile.js"></script>
+  <script src="game/js/local_score_manager.js"></script>
+  <script src="game/js/local_save_manager.js"></script>
+  <script src="game/js/game_manager.js"></script>
+  <script src="game/js/application.js"></script>
+
+<img border="0" src="game/style/131072.jpg" width="0" height="0"><img border="0" src="game/style/65536.jpg" width="0" height="0">
+
+<DIV class="s-isindex-wrap head_wrapper s-title-img  s-ps-islite" id="head_wrapper" 
+style="width: 740px; padding-top: 123px;">
+<DIV class="s-bottom-ctner" id="bottom_container">北师大二附中2016届2班版权所有</DIV>
+</body>
+</html>

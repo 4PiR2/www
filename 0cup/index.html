@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>武汉大学迎新网</title>
+        <link rel="shortcut icon" href="res/icon.ico" />
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+
+        <!--导航栏-->
+        <div id="nav" class="floor" style="z-index:10;font-size: 20px;font-family:STKaiti;background-color: #2b1d5b;">
+            <div id="logo"  onclick="window.open('http://www.whu.edu.cn');" style="background-image:url('img/logo.png');height:200px; top: 0; left: 36%; width: 28%; position: absolute;background-size: contain;background-position: center 0px;background-repeat:no-repeat;"></div>
+            <table id="toplink" width="100%" cellspacing="0" height="150px" style="color:white;">
+                <tr bgcolor="#243b2b">
+                    <td width="36%" colspan="2" onmouseover="eng();" onmouseout="chn();">
+                        <span id="whu" style="font-size: 25px;font-family: STXinwei;">武汉大学迎新网</span>
+                    </td>
+                    <td width="28%"></td>
+                    <td width="36%" colspan="2">
+                        <span id="whu2" style="font-size:25px;font-family: LiSu;">校训:自强 弘毅 求是 拓新</span>
+                    </td>
+                </tr>
+                <tr bgcolor="#2b1d5b">
+                    <td width="18%" class="highlighttd">
+                        <span onclick="window.open('http://bks.whu.edu.cn/')" >数字迎新系统</span>
+                    </td>
+                    <td width="18%" class="highlighttd">
+                        <div class="menu" id="menu1">
+                            <span>新生引导</span>    
+                            <ul class="nav2" > 
+                                <li class="one">
+                                    <a href="http://yx.whu.edu.cn/xsyd/bdlc.htm" target="_blank">报道流程</a>
+                                </li> 
+                                <li>
+                                    <a href="http://yx.whu.edu.cn/xsyd/x.htm" target="_blank">学－学习</a>
+                                </li>    
+                                <li>
+                                    <a href="http://yx.whu.edu.cn/xsyd/s.htm" target="_blank">食－饮食</a>
+                                </li>    
+                                <li>
+                                    <a href="http://yx.whu.edu.cn/xsyd/z.htm" target="_blank">住－住宿</a>
+                                </li>    
+                                <li>
+                                    <a href="http://yx.whu.edu.cn/xsyd/x1.htm" target="_blank">行－出行</a>
+                                </li>    
+                                <li>
+                                    <a href="http://yx.whu.edu.cn/xsyd/w.htm" target="_blank">玩－生活</a>
+                                </li>    
+                                <li class="two">
+                                    <a href="http://yx.whu.edu.cn/xsyd/xun.htm" target="_blank">训－军训</a>
+                                </li>    
+                            </ul>
+                        </div>
+                    </td>
+                    <td width="28%"></td>
+                    <td width="18%" class="highlighttd">
+                        <div class="menu" id="menu2">
+                            <span>相关链接</span>
+                            <ul class="nav2">    
+                                <li class="one">
+                                    <a href="http://www.whu.edu.cn" target="_blank">武汉大学</a>
+                                </li>    
+                                <li>
+                                    <a href="http://bbs.whu.edu.cn/" target="_blank">珞珈山水BBS</a>
+                                </li>    
+                                <li>
+                                    <a href="http://www.ziqiang.studio/" target="_blank">自强学堂网站</a>
+                                </li>    
+                                <li class="two">
+                                    <a href="http://www.whushopping.com/" target="_blank">珞珈自强超市</a>
+                                </li>       
+                            </ul>
+                        </div>
+                    </td>
+                    <td id="sbox" width="18%">
+                        <form method="get" id="form" action="http://www.baidu.com/s" target="_blank" >
+                            <input type="text" id="wd" name="wd" size="10" placeholder="关键词" />
+                            <input type="button" value=" 搜索 " onclick="search();" style="margin-left:-5px;background-color: #00CCEC;color:black;cursor: pointer;"/>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!--幻灯片-->
+        <div class="floor" style="height:500px">
+            <div class="ppt" id="ppt0" style="background-image:url('img/mainbg.png');">  
+                <img class="sights" src="res/mountain.svg" width="100%" style="left:0;bottom:150px;z-index:0;" onclick="window.open('res/mountain.svg');" />
+                <img class="sights" src="res/cs.svg" width="25%" style="left:2%;z-index:1;" onclick="window.open('res/cs.svg');"/>
+                <img class="sights" src="res/gate.svg" width="20%" style="left:23%;z-index:5;" onclick="window.open('res/gate.svg');"/>
+                <img class="sights" src="res/peak.svg" width="35%" style="left:35%;z-index:4;" onclick="window.open('res/peak.svg');" />
+                <img class="sights" src="res/transformer.svg" width="15%" style="left:65%;z-index:3;" onclick="window.open('res/transformer.svg');" />
+                <img class="sights" src="res/oldbuildings.svg" width="25%" style="left:73%;z-index:2;" onclick="window.open('res/oldbuildings.svg');" />
+                <img id="gif1" src="res/1.gif" width="14%" style="transform:rotateY(180deg);position:absolute;left:8%;bottom:90px;z-index:6;" onclick="window.open('res/1.gif');" />
+                <img id="gif2" src="res/2.gif" width="20%" style="position:absolute;left:8%;bottom:400px;z-index:6;" onclick="window.open('res/2.gif');" />
+            </div>
+            <div class="ppt" id="ppt1" style="background-image: url('img/flw.jpg');"onclick="window.open('img/flw.jpg');">
+                <div class="intro" style="color:#F685EB;">
+                    樱花大道<br /><br />樱花大道因樱花而得名，与老斋舍、樱花组成武大最迷人的风景，在樱花盛开的季节，放眼望去，洁白如雪，残落云海。
+                </div>
+            </div>
+            <div class="ppt" id="ppt2" style="background-image: url('img/lib.jpg');" onclick="window.open('img/lib.jpg');"> 
+                <div class="intro" style="color:#0acc7b;">
+                    老图书馆<br /><br />雄踞在校园中心狮子山制高点的老图书馆，是武大标志性的建筑和精神象征。塔楼阅览厅的外墙为八边形，设有环形外走廊供人休息和观光。
+                </div> 
+            </div>
+            <div class="ppt" id="ppt3" style="background-image: url('img/tree.jpg');" onclick="window.open('img/tree.jpg');">
+                <div class="intro" style="color:#d3d01f;">
+                    珞珈广场<br /><br />珞珈广场是武汉大学最大的绿色广场，有大面积的草坪，有弯曲小路，有花，有树，有长亭，是学生们放松、小憩的最佳场所。
+                </div>
+            </div>
+            <div class="ppt" id="ppt4" style="background-image: url('img/geo.jpg');" onclick="window.open('img/geo.jpg');">
+                <div class="intro" style="color:#f98f33;">
+                    湖光秋色<br /><br />一汪碧水，一群书生，一任风雨，一如数十年前，历经百余载。
+                </div>
+            </div>
+            <div class="ppt" id="ppt5" style="background-image: url('img/dor.jpg');" onclick="window.open('img/dor.jpg');">
+                <div class="intro" style="color:#ff5f4a;">
+                    老斋舍<br /><br />武汉大学最早的学生宿舍，也是校园早期建筑群之一。建筑整体设计巧妙，四栋宿舍由三座罗马券拱门连为一体，质朴大方、厚重沉稳，外形统一，气势宏伟。
+                </div>  
+            </div>
+	        <div class="icon" id="icon0" style="background-image: url('img/p0.png'); left:7%;" onclick="skip(0);"></div>
+	        <div class="icon" id="icon1" style="background-image: url('img/p1.png'); left: 22%;" onclick="skip(1);"></div>
+	        <div class="icon" id="icon2" style="background-image: url('img/p2.png'); left: 37%;" onclick="skip(2);"></div>
+            <div class="icon" id="icon3" style="background-image: url('img/p3.png'); left: 52%;"onclick="skip(3);"></div>
+	        <div class="icon" id="icon4" style="background-image: url('img/p4.png'); left: 67%;"onclick="skip(4);"></div>
+	        <div class="icon" id="icon5" style="background-image: url('img/p5.png'); left: 82%; "onclick="skip(5);"></div>
+        </div>
+
+
+        <!--公告栏-->
+        <div class="floor" style="height:300px;z-index:0;font-family: Microsoft YaHei;">
+            <div id="div1" class="board" style="left:0; background-image: url('img/blackboard1.jpg'); z-index:2;"onclick="moveboard()">
+                <ul>
+                    <li>
+                        <span onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">本科生通知</span>
+                    </li>
+                    <br />
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1028/1514.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016年新生入学办理空调卡须知</a>
+                    </li>
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1028/1513.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">关于迎新期间学生宿舍空调卡充值时间安排的通知</a>
+                    </li>
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1028/1458.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016级本科新生情况调查</a>
+                    </li>
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1028/1364.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016年新生入学须知之新生报到</a>
+                    </li>
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1028/1365.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016年新生入学须知之费用缴纳标准及方式</a>
+                    </li>
+                    <li>
+                        <b onmouseover="preventmove = 0;" onmouseout="preventmove = 1;" style="font-family: FZYaoti;font-size: 15px;">
+                            <a href="http://yx.whu.edu.cn/info/1024/1376.htm" target="_blank" >流程</a>
+                            <span > * </span>
+                            <a href="http://yx.whu.edu.cn/bks/fw.htm" target="_blank" >服务</a>
+                            <span> * </span>
+                            <a href="http://yx.whu.edu.cn/info/1026/1377.htm" target="_blank" >地图</a>
+                            <span> * </span>
+                            <a href="http://yx.whu.edu.cn/info/1027/1378.htm" target="_blank" >新生群</a>
+                        </b>
+                    </li>
+                </ul>
+                <div style="position:absolute;right:2%;bottom:45px;transform:rotate(-30deg);font-family: FZShuTi;font-size: 22px;">猛敲黑板有惊喜</div>
+                <div class="more">
+                    <a href="http://yx.whu.edu.cn/bks/tz.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">MORE</a>
+                </div>
+            </div>
+            <div id="div2" class="board" style="left:50%; background-image: url('img/blackboard2.jpg'); z-index:1" >
+                <ul>
+                    <li>
+                        <span onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">研究生通知</span>
+                    </li>
+                    <br />
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1033/1379.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016级研究生新生入学之准备事项</a>
+                    </li>
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1033/1380.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016级研究生新生入学之缴费方式</a>
+                    </li>
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1033/1381.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016级研究生新生入学之学费标准及奖学金</a>
+                    </li>
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1033/1382.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016级研究生新生入学之报到时间、地点及有关要求</a>
+                    </li>
+                    <li>
+                        <a href="http://yx.whu.edu.cn/info/1033/1383.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">武汉大学2016级研究生新生入学之报到相关规定</a>
+                    </li>
+                </ul>
+                <div class="more">
+                    <a href="http://yx.whu.edu.cn/yjs/tz.htm" target="_blank" onmouseover="preventmove = 0;" onmouseout="preventmove = 1;">MORE</a>
+                </div>
+            </div>
+            <div id="div3" style="background-image: url('img/screen.jpg'); background-size:100% 100%;background-position:center;height: 300px;top: 0; left: 0; width: 50%; position: absolute;z-index:0;">  
+                <video id="vd" controls src="res/video.mov" style="height:100%; width:100%;"/>
+            </div>
+        </div>
+
+
+        <!--常见问题-->
+        <div class="floor" style='background-image: url("img/faq.jpg");background-position: center; height:250px;background-size: cover;font-family: STKaiti;font-weight: bold;z-index:1;'>
+            <br />
+            <div style="position: absolute; left: 25%; width:50%; height:100px; top:75px;background-position: center;background-size: contain;background-image: url('img/faq.png');background-repeat:no-repeat;"></div>
+            <div id="qa0" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1395.htm" target="_blank" >
+                    <nobr>宿舍管理规范中有哪些典型行为是被禁止的？</nobr>
+                </a>
+	        </div>
+            <br />
+            <div id="qa1" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1394.htm" target="_blank" >
+                    <nobr>校园一卡通的发放范围都有哪些？有效期是多长时间？</nobr>
+                </a>
+	        </div>
+            <br />
+            <div id="qa2" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1393.htm" target="_blank" >
+                    <nobr>如何补办学生证？</nobr>
+                </a>
+	        </div>
+            <br />
+            <div id="qa3" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1313.htm" target="_blank" >
+                    <nobr>怎么办理（补办）居民身份证？</nobr>
+                </a>
+	        </div>
+            <br />
+            <div id="qa4" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1077.htm" target="_blank" >
+                    <nobr>如何申请勤工助学岗位？</nobr>
+                </a>
+	        </div>
+            <br />
+            <div id="qa5" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1076.htm" target="_blank" >
+                    <nobr>入学时户口迁入学校，身份证需要更换吗？如何更换身份证？</nobr>
+                </a>
+	        </div>
+            <br />
+            <div id="qa6" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1075.htm" target="_blank" >
+                    <nobr>全国计算机等级考试何时报名？考试一般在什么时间进行？</nobr>
+                </a>
+	        </div>
+            <br />
+            <div id="qa7" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1040.htm" target="_blank" >
+                    <nobr>毕业证、学位证丢失能否补办?</nobr>
+                </a>
+	        </div>
+            <br />
+            <div id="qa8" class="qa">
+		        <a href="http://yx.whu.edu.cn/info/1004/1039.htm" target="_blank" >
+                    <nobr>校内文化活动场地如何借用？</nobr>
+                </a>
+	        </div>
+            <br />
+        </div>
+
+
+        <!--快速通道-->
+        <div class="floor" style="text-align: center; height:383px; background-image: url('img/bottom.jpg');background-position:center;background-size: 100% 100%;">
+            <br/><br/><br/><br/><br/><br/>
+            <div class="title" style="left:8%;">
+                <a href="http://my.whu.edu.cn/" target="_blank" >信息门户</a>
+                <br/>
+                <a href="https://whu.edu.cn/" target="_blank" >邮件系统</a>
+                <br/>
+                <a href="http://nic.whu.edu.cn/" target="_blank" >信息中心</a>
+                <br/>
+                <a href="http://msk.lib.whu.edu.cn/" target="_blank" >名 师 网</a>
+                <br/>
+                <a href="http://alumni.whu.edu.cn/index.htm" target="_blank" >校友总会</a>
+                <br/>
+                <a href="http://kczx.whu.edu.cn/G2S/ShowSystem/Index.aspx" target="_blank" >课程中心</a>
+            </div>
+            <div class="title" style="left:18%;">
+                <a href="http://202.114.74.198/" target="_blank" >成绩查询</a>
+                <br/>
+                <a href="http://mydorm.whu.edu.cn/ihome" target="_blank" >住宿查询</a>
+                <br/>
+                <a href="http://202.114.74.136/cet/Default.aspx" target="_blank" >查四六级</a>
+                <br/>
+                <a href="http://zzgl.whu.edu.cn/web/Channel.asp?w=1&amp;c=7" target="_blank" >助学贷款</a>
+                <br/>
+                <a href="http://zzgl.whu.edu.cn/web/Channel.asp?w=3&amp;c=30" target="_blank" >勤工助学</a>
+                <br/>
+                <a href="http://baike.ziqiang.whu.edu.cn/" target="_blank" >学生百科</a>
+            </div>
+            <div class="title" style="left:28%;">
+                <a href="http://210.42.121.241/" target="_blank" >教务系统</a>
+                <br/>
+                <a href="http://xlzx.whu.edu.cn/" target="_blank" >心理咨询</a>
+                <br/>
+                <a href="http://nic.whu.edu.cn/info/9377/58217.htm" target="_blank" >上网说明</a>
+                <br/>
+                <a href="http://www.whu.edu.cn/jgsz/yxsz.htm" target="_blank" >院系主页</a>
+                <br/>
+                <a href="http://ugs.whu.edu.cn/xl/a2016_2017nxl.htm" target="_blank" >校园日历</a>
+                <br/>
+                <a href="http://vhost.whu.edu.cn/gh/xywh.php?Class_Type=0&amp;Class_ID=42" target="_blank" >校园电影</a>
+            </div>
+            <div class="title" style="left:38%;">
+                <a href="http://news.whu.edu.cn/info/1021/39517.htm" target="_blank" >形 象 片</a>
+                <br/>
+                <a href="http://news.whu.edu.cn/info/1021/39516.htm" target="_blank" >文 献 片</a>
+                <br/>
+                <a href="http://news.whu.edu.cn/info/1021/39515.htm" target="_blank" >校 友 片</a>
+                <br/>
+                <a href="http://openday.whu.edu.cn/" target="_blank" >开 放 日</a>
+                <br/>
+                <a href="http://www.aoff.whu.edu.cn/" target="_blank" >本科招生</a>
+                <br/>
+                <a href="http://i.whu.edu.cn/" target="_blank" >移动应用</a>
+            </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <div class="qr" style="background-image:url('img/qr-whu-wc.png'); left: 51%;">
+                <br /><br /><br /><br /><br /><br />武汉大学<br />官方微信
+            </div>
+            <div class="qr" style="background-image:url('img/qr-zswd-wc.png'); left: 66%;">
+                <br /><br /><br /><br /><br /><br />掌上武大<br />微信
+            </div>
+            <div class="qr" style="background-image:url('img/qr-lys.png'); left: 81%;">
+                <br /><br /><br /><br /><br /><br />武大语音导游<br />珞樱说App
+            </div>
+            <div class="floor" style="height: 1px; margin:0px auto;padding:0px; background-color:#ffffff; overflow:hidden;"></div>
+            <div class="floor" style="text-align: center;color:#ffffff;font-family: Microsoft YaHei;cursor:default;">
+                武汉大学&nbsp;&nbsp;&nbsp;&nbsp;地址：湖北省武汉市武昌区八一路299号&nbsp;&nbsp;&nbsp;&nbsp;邮编：430072
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
