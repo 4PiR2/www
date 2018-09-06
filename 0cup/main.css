@@ -1,0 +1,223 @@
+﻿/*页面布局*/
+body,ul,li,form,button,input,td{
+    margin:0;
+    padding:0
+}
+body{
+    text-align:center
+}
+.floor{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+
+/*导航栏*/
+.qa a{ 
+	text-decoration:none;
+	color:black;
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+.menu ul{    
+    display:none;
+    list-style:none;
+}
+.menu:hover ul{    
+    display:block;
+    background:#b7cefa;
+    position: absolute;
+    width:14%;
+    border-radius:10px;
+    box-shadow: 3px 3px 4px #333;
+}
+#menu1:hover ul{
+    left:20%;
+}
+#menu2:hover ul{
+    right:20%;
+}
+.nav2 a{
+    display: block;
+    font-weight: none;
+    color:#000000;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+.nav2 a:hover{
+    color: #ffffff;
+    background-color: #2e8b57;
+    border-radius:0px;
+}
+.one a:hover{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.two a:hover{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.highlighttd:hover{
+    color: black;
+    background-color: #FFD204;
+    border-radius:20px;
+    cursor:pointer;
+}
+#logo:hover{
+    zoom:1.5;
+    cursor:pointer;
+}
+input{
+    border:0;
+    height:25px;
+    font-family: STKaiti;
+    font-weight: bold;
+    font-size:15px;
+}
+#whu,#whu2{
+    cursor:default;
+}
+
+
+/*幻灯片*/
+.ppt{
+	opacity:0;
+	transition:opacity 2s linear;
+    background-size:100% 100%;
+    background-position:center;
+    height: 500px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index:0;
+}
+    .icon{
+    background-size:100% 100%;
+    background-position:center;
+    height: 100px;
+    top: 390px;
+    width: 10%;
+    position: absolute;
+    z-index:2;
+}
+.icon:hover{
+    cursor:pointer;
+}
+.sights{
+    position:absolute;
+    bottom:100px;
+}
+.sights:hover{
+    zoom:1.1;
+    cursor:pointer;
+}
+.intro{
+    padding-top:2%;
+    padding-left:2%;
+    padding-right:2%;
+    position:absolute;
+    left:3%;
+    top:70px;
+    width:30%;
+    height:250px;
+    background-color:rgba(0,0,0,0.6);
+    border-radius:10px;
+    line-height: 150%;
+    text-align:left;
+    font-size: 20px;
+    font-family:'STHupo';
+}
+
+
+/*公告栏*/
+#vd{
+    border-radius:20%;
+}
+#div1{cursor:pointer;
+    transition:left 4s linear;
+}
+.board li{
+    color:white;
+}
+.board ul{
+    list-style:none;
+}
+.board a{
+    color:white;
+}
+.board div{
+    color:white;
+}
+.board{
+    text-align:left;
+    padding:20px 5%;
+    background-size:100% 100%;
+    background-position:center;
+    height: 260px;
+    top: 0;
+    width: 40%;
+    position: absolute;
+    line-height: 175%;
+}
+.board span{
+    position:relative;
+    top:12px;
+    font-family: STXinwei;
+    font-size: 30px;
+}
+.more{
+    position:absolute;right:10%;top:20px;
+}
+
+
+/*常见问题*/
+.qa{
+    animation:bullet linear infinite;
+    position: absolute;
+    right: 0;
+    }
+    @keyframes bullet{
+        from {right: 0;}
+        to {right:100%;}
+}
+#qa0{animation-duration:17s;}
+#qa1{animation-duration:12s;}
+#qa2{animation-duration:14s;}
+#qa3{animation-duration:15s;}
+#qa4{animation-duration:10s;}
+#qa5{animation-duration:16s;}
+#qa6{animation-duration:13s;}
+#qa7{animation-duration:9s;}
+#qa8{animation-duration:11s;}
+
+
+/*快速通道*/
+.title a{
+    color:#ffffff;
+}
+.title{
+    position:absolute;
+    text-align: left;
+    font-family: Microsoft YaHei;
+    line-height: 200%;
+}
+.qr{
+    height: 150px;
+    top: 125px;
+    width: 10%;
+    position: absolute;
+    background-size: contain;
+    background-position: center 0px;
+    background-repeat:no-repeat;
+    text-align: center;
+    color:white;
+    cursor:default;
+    font-family: Microsoft YaHei;
+}
+
