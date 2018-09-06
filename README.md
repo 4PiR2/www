@@ -1,2 +1,2 @@
-# github pages
-www.happygod.net
+# Github Pages
+https://www.happygod.net
