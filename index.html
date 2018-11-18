@@ -1,45 +1,45 @@
 <html>
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv='content-type' content='text/html; charset=utf-8' />
 		<title>HappyGod</title>
-		<script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript"> 
+		<script type='text/javascript' src='/static/js/jquery-3.3.1.min.js'></script>
+		<script type='text/javascript'> 
 			var a_idx = 0; 
 			jQuery(document).ready(function($) { 
-				$("body").click(function(e) { 
-					var a = new Array("legend-k.com", "edric.club", "ravenyyy.club", "davidsirui.github.io"); 
-					var $i = $("<span/>").text(a[a_idx]); 
+				$('body').click(function(e) { 
+					var a = new Array('legend-k.com', 'edric.club', 'ravenyyy.club', 'davidsirui.github.io'); 
+					var $i = $('<span/>').text(a[a_idx]); 
 					a_idx = (a_idx + 1) % a.length; 
 					var x = e.pageX, 
 					y = e.pageY; 
 					$i.css({ 
-						"z-index": 999999999999999999999999999999999999999999999999999999999999999999999, 
-						"top": y - 20, 
-						"left": x, 
-						"position": "absolute", 
-						"font-weight": "bold", 
-						"color": "red" 
+						'z-index': 999999999999999999999999999999999999999999999999999999999999999999999, 
+						'top': y - 20, 
+						'left': x, 
+						'position': 'absolute', 
+						'font-weight': 'bold', 
+						'color': 'red' 
 					}); 
-					$("body").append($i); 
+					$('body').append($i); 
 					$i.animate({ 
-						"top": y - 180, 
-						"opacity": 0 
+						'top': y - 180, 
+						'opacity': 0 
 					}, 
 					1500, 
 					function() { 
 						$i.remove(); 
 					}); 
 				}); 
-			}); 
+			});
 		</script>
 	</head>
 	<body>
 		<span><b>WELCOME TO HAPPYGOD'S MAINPAGE</b></span><br />
 <b>User-Agent: </b><script>document.write(navigator.userAgent)</script><br />
-<iframe src="./clock/index.html" scrolling="no" style="border:0;"></iframe><br />
-<a href="https://happygod.net/" target="_blank">Apex Station</a><br />
-<span>201504·2-科技节</span>&nbsp;&nbsp;<a href="./201602/" target="_blank">2016届2班网站</a><br />
-<span>201611·WHU0杯</span>&nbsp;&nbsp;<a href="./0cup/" target="_balnk">武汉大学迎新网</a><br />
-<a href="./donotclick.html">DO NOT CLICK</a>
+<iframe src='./clock/index.html' scrolling='no' style='border:0;'></iframe><br />
+<a href='https://happygod.net/' target='_blank'>Apex Station</a><br />
+<span>201504·2-科技节</span>&nbsp;&nbsp;<a href='./201602/' target='_blank'>2016届2班网站</a><br />
+<span>201611·WHU0杯</span>&nbsp;&nbsp;<a href='./0cup/' target='_balnk'>武汉大学迎新网</a><br />
+<a href='./donotclick.html'>DO NOT CLICK</a>
 	</body>
 </html>
