@@ -1,48 +1,84 @@
 <html>
-	<head>
-		<meta http-equiv='content-type' content='text/html; charset=utf-8' />
-		<title>HappyGod</title>
-		<script type='text/javascript' src='/static/js/jquery-3.3.1.min.js'></script>
-		<script type='text/javascript'> 
-			var a_idx = 0; 
-			jQuery(document).ready(function($) { 
-				$('body').click(function(e) { 
-					var a = new Array('legend-k.com', 'edric.club', 'ravenyyy.club', 'davidsirui.github.io'); 
-					var $i = $('<span/>').text(a[a_idx]); 
-					a_idx = (a_idx + 1) % a.length; 
-					var x = e.pageX, 
-					y = e.pageY; 
-					$i.css({ 
-						'z-index': 999999999999999999999999999999999999999999999999999999999999999999999, 
-						'top': y - 20, 
-						'left': x, 
-						'position': 'absolute', 
-						'font-weight': 'bold', 
-						'color': 'red' 
-					}); 
-					$('body').append($i); 
-					$i.animate({ 
-						'top': y - 180, 
-						'opacity': 0 
-					}, 
-					1500, 
-					function() { 
-						$i.remove(); 
-					}); 
-				}); 
-			});
-		</script>
-	</head>
-	<body>
-		<span><b>WELCOME TO HAPPYGOD'S MAINPAGE</b></span><br />
-<b>User-Agent: </b><script>document.write(navigator.userAgent)</script><br />
-<iframe src='./clock/index.html' scrolling='no' style='border:0;'></iframe><br />
-<a href='https://happygod.net/' target='_blank'>Apex Station</a><br />
-<a href='https://cn.happygod.net/' target='_blank'>China Station</a><br />
-<span>201504·2-科技节</span>&nbsp;&nbsp;<a href='./201602/' target='_blank'>2016届2班网站</a><br />
-<span>201611·WHU0杯</span>&nbsp;&nbsp;<a href='./0cup/' target='_balnk'>武汉大学迎新网</a><br />
-<span>201811·WHU大型应用软件设计</span>&nbsp;&nbsp;<a href='https://jerrymouse.happygod.net/' target='_balnk'>Jerrymouse Web Server</a>
-&nbsp;<a href='https://jerrymouse.happygod.net/download/jerrymouse.apk' target='_balnk'>Download</a><br />
-<a href='./donotclick.html'>DO NOT CLICK</a>
-	</body>
+<head>
+<meta charset="utf-8">
+<title>HappyGod</title>
+<!-- Bootstrap core CSS -->
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<!-- Template core CSS-->
+<link href="static/css/style.css" rel="stylesheet">
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script src="static/js/jquery-3.3.1.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/responsiveslides.min.js"></script>
+<script src="static/js/clickword.js"></script>
+</head>
+<body>
+<!-- SECTION SERVICES START  -->
+<section id="section-services" class="section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-heading text-center">
+					<img src='static/img/logo.png' style="width: 100px;">
+					<h3>WELCOME TO HAPPYGOD'S HOMEPAGE</h3>
+					<div class="sec-line"></div>
+					<iframe src='./clock/index.html' scrolling='no' style='border:0;'></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box">
+					<h3><span>01</span><a href='https://happygod.net/' target='_blank'>Apex Station</a></h3>
+					<p>happygod.net</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box">
+					<h3><span>02</span><a href='./201602/' target='_blank'>2016届2班网站</a></h3>
+					<p>201504&nbsp;·&nbsp;2-科技节</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box">
+					<h3><span>03</span><a href='./0cup/' target='_balnk'>武汉大学迎新网</a></h3>
+					<p>201611&nbsp;·&nbsp;WHU0杯</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box">
+					<h3><span>04</span><a href='https://jerrymouse.happygod.net/' target='_balnk'>Jerrymouse</a></h3>
+					<p>201811&nbsp;·&nbsp;WHU大型应用软件设计&nbsp;·&nbsp;Web Server&nbsp;&nbsp;
+						<a href='https://jerrymouse.happygod.net/download/jerrymouse.apk' target='_balnk'>Download</a></p>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<div class="service-box">
+					<h3><span>05</span><a href='./donotclick.html'>DO NOT CLICK</a></h3>
+					<p>Dangerous!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- SECTION SERVICES END  -->
+
+<!-- SECTION DESTINATION START  -->
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-heading text-center">
+					<p><b>User-Agent: </b><script>document.write(navigator.userAgent);</script></p>
+					<img src='static/img/avatar.png' style="width: 50px;">
+					<p>&copy;<script>document.write((new Date).getFullYear());</script> HappyGod</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- SECTION DESTINATIONS END  -->
+</body>
 </html>
