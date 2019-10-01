@@ -1,7 +1,7 @@
 var a_idx = 0; 
 jQuery(document).ready(function($) { 
 	$('body').click(function(e) { 
-		var a = new Array('legend-k.com', 'edric.club', 'ravenyyy.club', 'davidsirui.github.io'); 
+		var a = new Array('legend-k.com', 'edric.club', 'ravenyyy.club', 'davidsirui.github.io', 'iclab.xyz'); 
 		var $i = $('<span/>').text(a[a_idx]); 
 		a_idx = (a_idx + 1) % a.length; 
 		var x = e.pageX, 
